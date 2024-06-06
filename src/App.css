@@ -1,0 +1,91 @@
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/public/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;/* Replace with your desired background color */
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+ 
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.NavBar{
+  /* display: grid; */
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Silkscreen', sans-serif  ;
+  width: 100%;
+  height: 10vh;
+  padding: 0 5%;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 1;
+  right:5%;
+  background-color: #232222;
+}
+
+.AboutComponent{
+  right: -70%;
+  top: 45%;
+}
+
+.ProjectsComponent{
+  left: 65%;
+  bottom: 7%;
+}
+
+.Background{
+  background-color: #232222
+
+  
+}
