@@ -89,3 +89,13 @@ canvas {
 
   
 }
+
+.container-class {
+  background-color: #852f14; /* Example background color */
+  border: 1px solid #852f14; /* Example border */
+  border-radius: 8px; /* Example border radius */
+  padding: 16px; /* Example padding */
+  margin: 8px auto; /* Example margin */
+  max-width: 600px; /* Example max width */
+  font-family: "Playfair Display", serif; /* Example font family */
+}
