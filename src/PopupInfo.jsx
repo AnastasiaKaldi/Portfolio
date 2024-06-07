@@ -1,6 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import PopupInfo from "./PopupInfo"; // Import the PopupInfo component
 
 const containerVariants = {
   hidden: { opacity: 0, y: -50 },
@@ -8,26 +12,40 @@ const containerVariants = {
   exit: { opacity: 0, y: 50, transition: { duration: 0.5 } },
 };
 
-const PopupInfo = ({ currentStage }) => {
+const Infobox = ({ text, link, btnText, children }) => {
+  return (
+    <div className="infobox">
+      <p>{text}</p>
+      <Link to={link}>
+        <button>{btnText}</button>
+      </Link>
+      {children}
+    </div>
+  );
+};
+
+const PopupContainer = ({ currentStage }) => {
+  // Rename PopupInfo to PopupContainer
   const containerStyle = "container-class py-4 px-8 mx-5";
 
   return (
     <AnimatePresence>
       {currentStage === 1 && (
         <motion.div
-          key="stage1"
+          key="stage2"
           className={containerStyle}
           variants={containerVariants}
           initial="hidden"
           animate="visible"
           exit="exit"
         >
-          <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue text-white">
-            Hello, I'm
-            <span className="font-semibold mx-2 text-white">Natasha</span>
-            👋
-            <br />A UI/UX developer and Musician from Greece 🇬🇷
-          </h1>
+          <PopupInfo currentStage={currentStage} />{" "}
+          {/* Render PopupInfo here */}
+          <Infobox
+            text="I am interested in music and tech and I like to make websites"
+            link=""
+            btnText="Learn more"
+          />
         </motion.div>
       )}
       {currentStage === 2 && (
@@ -39,11 +57,13 @@ const PopupInfo = ({ currentStage }) => {
           animate="visible"
           exit="exit"
         >
-          <p className="font-medium sm:text-xl text-center">
-            I am interested in creating beautiful and functional websites and
-            web applications. <br />I am also a musician and I love creating
-            music! 🎵
-          </p>
+          <PopupInfo currentStage={currentStage} />{" "}
+          {/* Render PopupInfo here */}
+          <Infobox
+            text="I am interested in music and tech and I like to make websites"
+            link=""
+            btnText="Learn more"
+          />
         </motion.div>
       )}
       {currentStage === 3 && (
@@ -65,4 +85,4 @@ const PopupInfo = ({ currentStage }) => {
   );
 };
 
-export default PopupInfo;
+export default PopupContainer; // Export PopupContainer instead of PopupInfo

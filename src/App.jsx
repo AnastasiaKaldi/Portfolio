@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unknown-property */
 import { OrbitControls } from "@react-three/drei";
 import "./App.css";
