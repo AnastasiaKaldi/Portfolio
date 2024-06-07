@@ -3,8 +3,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
-import PopupInfo from "./PopupInfo"; // Import the PopupInfo component
 
 const containerVariants = {
   hidden: { opacity: 0, y: -50 },
@@ -12,38 +10,34 @@ const containerVariants = {
   exit: { opacity: 0, y: 50, transition: { duration: 0.5 } },
 };
 
-const Infobox = ({ text, link, btnText, children }) => {
+const Infobox = ({ text, link, btnText }) => {
   return (
     <div className="infobox">
       <p>{text}</p>
-      <Link to={link}>
+      <a href={link}>
         <button>{btnText}</button>
-      </Link>
-      {children}
+      </a>
     </div>
   );
 };
 
-const PopupContainer = ({ currentStage }) => {
-  // Rename PopupInfo to PopupContainer
+const PopupInfo = ({ currentStage }) => {
   const containerStyle = "container-class py-4 px-8 mx-5";
 
   return (
     <AnimatePresence>
       {currentStage === 1 && (
         <motion.div
-          key="stage2"
+          key="stage1"
           className={containerStyle}
           variants={containerVariants}
           initial="hidden"
           animate="visible"
           exit="exit"
         >
-          <PopupInfo currentStage={currentStage} />{" "}
-          {/* Render PopupInfo here */}
           <Infobox
-            text="I am interested in music and tech and I like to make websites"
-            link=""
+            text="Hello, I'm Natasha 👋 A UI/UX developer and Musician from Greece 🇬🇷"
+            link="#"
             btnText="Learn more"
           />
         </motion.div>
@@ -57,11 +51,9 @@ const PopupContainer = ({ currentStage }) => {
           animate="visible"
           exit="exit"
         >
-          <PopupInfo currentStage={currentStage} />{" "}
-          {/* Render PopupInfo here */}
           <Infobox
-            text="I am interested in music and tech and I like to make websites"
-            link=""
+            text="Worked with many companies and picked up many skills along the way"
+            link="#"
             btnText="Learn more"
           />
         </motion.div>
@@ -76,8 +68,23 @@ const PopupContainer = ({ currentStage }) => {
           exit="exit"
         >
           <p className="font-medium sm:text-xl text-center">
+            Led multiple projects to success over the years. <br />
+            Curious about the impact?
+          </p>
+        </motion.div>
+      )}
+      {currentStage === 4 && (
+        <motion.div
+          key="stage4"
+          className={containerStyle}
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+        >
+          <p className="font-medium sm:text-xl text-center">
             Need a project done or looking for a dev? <br />
-            Lets have a chat! ☕️
+            I'm just a few keystrokes away.
           </p>
         </motion.div>
       )}
@@ -85,4 +92,4 @@ const PopupContainer = ({ currentStage }) => {
   );
 };
 
-export default PopupContainer; // Export PopupContainer instead of PopupInfo
+export default PopupInfo;
