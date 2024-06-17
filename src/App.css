@@ -75,15 +75,21 @@ canvas {
 }
 
 .AboutComponent{
-  right: -70%;
-  top: 45%;
+  right: -73%;
+  top: 40%;
 }
 
 .ProjectsComponent{
   left: 65%;
-  bottom: 7%;
+  bottom: 15%;
 }
 
+.ReachComponent{
+  left: 75%;
+  bottom: 70%;
+
+
+}
 .Background{
   background-color: #232222
 
@@ -98,4 +104,24 @@ canvas {
   margin: 8px auto; /* Example margin */
   max-width: 600px; /* Example max width */
   font-family: "Playfair Display", serif; /* Example font family */
+}
+
+.Contact{
+  background-color: #232222;
+
+}
+
+.btn {
+  color: rgb(118, 23, 23);
+  font-weight: 500; /* This is for font-medium */
+  text-align: center;
+
+  /* Additional styles for focus */
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(124,45, 18); /* focus:ring-4 focus:ring-red-300 */
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(104, 43, 43, 0.5); /* focus:ring-4 focus:ring-red-300 */
 }

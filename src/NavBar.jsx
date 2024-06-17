@@ -26,6 +26,11 @@ function NavBar() {
           <span style={{ fontFamily: "Playfair Display" }}>Projects</span>
         </FlyoutLink>
       </div>
+      <div className="ReachComponent text-m relative container mx-auto py-4 ml-80 flex space-x-8">
+        <FlyoutLink href="/contact" FlyoutContent={<ReachContent />}>
+          <span style={{ fontFamily: "Playfair Display" }}>Get in touch</span>
+        </FlyoutLink>
+      </div>
     </div>
   );
 }
@@ -81,6 +86,10 @@ const AboutContent = () => {
 };
 
 const ProjectsContent = () => {
+  return <div className=""></div>;
+};
+
+const ReachContent = () => {
   return <div className=""></div>;
 };
 
