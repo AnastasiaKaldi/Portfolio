@@ -10,7 +10,7 @@ function NavBar() {
         className="flex items-center space-x-3 rtl:space-x-reverse shadow-md"
       >
         <span
-          className="self-center text-4xl font-semibold whitespace-nowrap text-orange-800 -mb-28 "
+          className="self-center text-4xl font-semibold whitespace-nowrap text-purple-800 -mb-28 "
           style={{ fontFamily: "Playfair Display" }}
         >
           AK
@@ -47,7 +47,7 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
     >
       <a
         href={href}
-        className="relative h-fit w-fit text-white hover:text-orange-800"
+        className="relative h-fit w-fit text-white hover:text-purple-800"
         style={{ fontFamily: "Times New Roman" }}
       >
         {children}
@@ -55,7 +55,7 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
           style={{
             transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
           }}
-          className="absolute bottom-0 left-0 right-0 mt-10 h-1 origin-left rounded-full bg-orange-800 transition-transform duration-300 ease-out"
+          className="absolute bottom-0 left-0 right-0 mt-10 h-1 origin-left rounded-full bg-purple-300 transition-transform duration-300 ease-out"
         />
       </a>
       <AnimatePresence>

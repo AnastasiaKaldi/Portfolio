@@ -48,9 +48,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="Contact  flex">
+    <div className="Contact w-full h-screen flex ">
       <div className="flex-1 flex flex-col p-4 md:p-10">
-        {" "}
         {/* Adjusted padding */}
         <h1
           className="text-white text-6xl mt-40"
@@ -104,7 +103,7 @@ const Contact = () => {
           </label>
           <button
             type="submit"
-            className="btn w-full h-12 mt-8 text-white bg-orange-900 rounded-sm"
+            className="btn w-full h-12 mt-8 text-white bg-purple-950 rounded-sm"
             style={{ fontFamily: "Playfair Display" }}
             disabled={isLoading}
             onFocus={handleFocus}
@@ -118,13 +117,7 @@ const Contact = () => {
         <Canvas camera={{ position: [0, 0, 5], fov: 75, near: 0.1, far: 1000 }}>
           <directionalLight position={[0, 0, 1]} intensity={2.5} />
           <ambientLight intensity={0.5} />
-          <Suspense fallback={null}>
-            <Dog
-              position={[0, -2, 0]}
-              rotation={[12.4, -0.6, -0.1]}
-              scale={[5, 5, 5]}
-            />
-          </Suspense>
+          <Suspense fallback={null}></Suspense>
         </Canvas>
       </div>
     </div>
