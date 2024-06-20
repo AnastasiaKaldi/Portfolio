@@ -11,7 +11,6 @@ import Island from "../src/models/Island.jsx";
 function App() {
   return (
     <div className="Background grid-cols-2">
-      <div className="Island flex text-black">col 1</div>
       <Island className="" />
     </div>
   );

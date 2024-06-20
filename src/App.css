@@ -1,19 +1,21 @@
-
 @font-face {
   font-family: 'Playfair Display';
   src: url('/public/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf');
 }
-/* body, html {
+
+body, html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-} */
+}
 
-/* #root {
+#root {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-} */
+}
 
 .logo {
   height: 6em;
@@ -21,19 +23,14 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
-/* canvas {
-  width: 100%;
-  height: 100%;
-  position: relative;
- 
-} */
 
 @keyframes logo-spin {
   from {
@@ -58,8 +55,7 @@
   color: #888;
 }
 
-.NavBar{
-  /* display: grid; */
+.NavBar {
   flex-direction: row;
   justify-content: space-between;
   font-family: 'Silkscreen', sans-serif  ;
@@ -70,93 +66,67 @@
   position: fixed;
   z-index: 1;
   right:5%;
-  background-color: #a57ce1;
+  background-color: #a47ce149;
 }
 
-.AboutComponent{
+.AboutComponent {
+  position: absolute;
   right: -73%;
   top: 40%;
 }
 
-.ProjectsComponent{
+.ProjectsComponent {
+  position: absolute;
   left: 65%;
   bottom: 15%;
 }
 
-.ReachComponent{
+.ReachComponent {
+  position: absolute;
   left: 75%;
   bottom: 70%;
-
-
 }
 
 .Background {
-  display:grid;
-  place-items: center;
-  min-height: 100vh;
-  background-color: #EDCDAB;
-}
-
-.Spline{
-  scale: 0.75; 
-  min-height: 180vh;
-  width: 100%;
-}
-
-.Island{
-  z-index: 1;
-  position: relative;
-}
-
-/* .Island{
-  top: 6px;
-  bottom: 50px;
-  left:40%;
-  right:0%;
-} */
-
-/* .IslandContainer {
-  width: 100%;
-  height: 100%;
+  background-color: #a47ce1;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.IslandContainer > div {
-  max-width: 100%;
-  max-height: 100%;
-  width: fit-content;
-  height: fit-content;
-} */
-
-
+.Spline {
+  transform: scale(0.5);
+  min-height: 175vh;
+  width: 100vw;
+  margin-left: 800px;
+  
+}
 
 .container-class {
-  background-color: #852f14; /* Example background color */
-  border: 1px solid #852f14; /* Example border */
-  border-radius: 8px; /* Example border radius */
-  padding: 16px; /* Example padding */
-  margin: 8px auto; /* Example margin */
-  max-width: 600px; /* Example max width */
-  font-family: "Playfair Display", serif; /* Example font family */
+  background-color: #852f14;
+  border: 1px solid #852f14;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px auto;
+  max-width: 600px;
+  font-family: "Playfair Display", serif;
 }
 
-.Contact{
-  background-color: #a57ce1
-  /* background-color: #852f14; */
-
+.Contact {
+  background-color: #a57ce1;
 }
 
 .btn {
   color: rgb(140, 30, 152);
-  font-weight: 500; /* This is for font-medium */
+  font-weight: 500;
   text-align: center;
-
-  /* Additional styles for focus */
   outline: none;
-  box-shadow: 0 0 0 4px rgb(59,7 ,100); /* focus:ring-4 focus:ring-red-300 */
+  box-shadow: 0 0 0 4px rgb(59, 7, 100);
 }
 
 .btn:focus {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(188, 84, 147, 0.5); /* focus:ring-4 focus:ring-red-300 */
+  box-shadow: 0 0 0 4px rgba(188, 84, 147, 0.5);
 }
