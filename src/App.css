@@ -3,18 +3,17 @@
   font-family: 'Playfair Display';
   src: url('/public/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf');
 }
-body, html {
+/* body, html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;/* Replace with your desired background color */
-}
+} */
 
-#root {
+/* #root {
   width: 100%;
   height: 100%;
-}
+} */
 
 .logo {
   height: 6em;
@@ -29,12 +28,12 @@ body, html {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-canvas {
+/* canvas {
   width: 100%;
   height: 100%;
   position: relative;
  
-}
+} */
 
 @keyframes logo-spin {
   from {
@@ -92,9 +91,29 @@ canvas {
 }
 
 .Background {
-
-  background-color: #EDCDAB
+  display:grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #EDCDAB;
 }
+
+.Spline{
+  scale: 0.75; 
+  min-height: 180vh;
+  width: 100%;
+}
+
+.Island{
+  z-index: 1;
+  position: relative;
+}
+
+/* .Island{
+  top: 6px;
+  bottom: 50px;
+  left:40%;
+  right:0%;
+} */
 
 /* .IslandContainer {
   width: 100%;
