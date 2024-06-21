@@ -3,6 +3,11 @@
   src: url('/public/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf');
 }
 
+@font-face{
+  font-family: 'Molle';
+  src: url('/public/Molle/Molle-Italic.ttf');
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -58,14 +63,14 @@ body, html {
 .NavBar {
   flex-direction: row;
   justify-content: space-between;
-  font-family: 'Silkscreen', sans-serif  ;
+  font-family: 'Silkscreen', sans-serif;
   width: 100%;
   height: 10vh;
   padding: 0 5%;
   opacity: 0.9;
   position: fixed;
   z-index: 1;
-  right:5%;
+  right: 5%;
   background-color: #a47ce149;
 }
 
@@ -94,6 +99,7 @@ body, html {
   justify-content: center;
   align-items: center;
   height: 100%;
+  position: relative;
 }
 
 .Spline {
@@ -101,7 +107,6 @@ body, html {
   min-height: 175vh;
   width: 100vw;
   margin-left: 800px;
-  
 }
 
 .container-class {
@@ -129,4 +134,14 @@ body, html {
 .btn:focus {
   outline: none;
   box-shadow: 0 0 0 4px rgba(188, 84, 147, 0.5);
+}
+
+.title-text {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-family: 'Molle', serif;
+  max-width: 400px;
 }
