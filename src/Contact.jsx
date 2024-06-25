@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import React, { useState, useRef, Suspense } from "react";
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber"; // Correct named import for Canvas
@@ -21,38 +22,13 @@ const Contact = () => {
   const handleFocus = () => {};
   const handleBlur = () => {};
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    emailjs
-      .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Anastasia",
-          from_email: form.email,
-          to_email: "kaldianastasia@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(() => {
-        setIsLoading(false);
-        setForm({ name: "", email: "", message: "" });
-      })
-      .catch((error) => {
-        setIsLoading(false);
-        console.log(error);
-      });
-  };
+  const handleSubmit = () => {};
 
   return (
     <div className="Contact w-full h-screen flex ">
       <div className="flex-1 flex flex-col p-4 md:p-10">
-        {/* Adjusted padding */}
         <h1
-          className="text-white text-6xl mt-40"
+          className="text-white text-6xl"
           style={{ fontFamily: "Playfair Display" }}
         >
           Get in touch
@@ -113,7 +89,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      <div className="flex-1 lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]">
+      <div className="lg:w-1/2 w-full lg:h-auto md:h-[500px] h-[200px]">
         <Canvas camera={{ position: [0, 0, 5], fov: 75, near: 0.1, far: 1000 }}>
           <directionalLight position={[0, 0, 1]} intensity={2.5} />
           <ambientLight intensity={0.5} />
