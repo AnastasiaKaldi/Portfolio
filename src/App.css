@@ -12,7 +12,7 @@ body, html {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 100%; 
 }
 
 #root {
@@ -20,21 +20,6 @@ body, html {
   flex-direction: column;
   width: 100%;
   height: 100%;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
@@ -52,13 +37,13 @@ body, html {
   }
 }
 
-.card {
+/* .card {
   padding: 2em;
-}
-
+} */
+/* 
 .read-the-docs {
   color: #888;
-}
+} */
 
 .NavBar {
   flex-direction: row;
@@ -98,7 +83,6 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
   position: relative;
 }
 
@@ -106,7 +90,10 @@ body, html {
   transform: scale(0.5);
   min-height: 175vh;
   width: 100vw;
-  margin-left: 800px;
+  margin-left: 750px;
+  top: 4%;
+  margin-top: 200px;
+
 }
 
 .container-class {
@@ -138,10 +125,45 @@ body, html {
 
 .title-text {
   position: absolute;
-  top: 45%;
-  left: 5%;
   transform: translateY(-50%);
   color: #fff;
   font-family: 'Molle', serif;
   max-width: 400px;
+  margin-top: 450px;
+  margin-right: 1050px;
+}
+
+.About{
+  background-color: #a47ce1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.Projects{
+  background-color: #a47ce1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.AboutMe{
+  font-family: "Playfair Display", serif;
+  margin-bottom: 700px;
+  margin-right: 1400px;
+}
+
+.MyProjects{
+  font-family: "Playfair Display", serif;
+  margin-bottom: 700px;
+  margin-right: 1400px;
+
 }

@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 import { AnimatePresence, motion } from "framer-motion";
 
 function NavBar() {

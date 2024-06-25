@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    background-color: #f3e7db;
+  }
