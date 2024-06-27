@@ -26,7 +26,7 @@ const Contact = () => {
 
   return (
     <div className="Contact w-full h-screen flex ">
-      <div className="flex-1 flex flex-col p-4 md:p-10">
+      <div className="flex-1 flex flex-col p-3 md:p-10">
         <h1
           className="text-white text-6xl"
           style={{ fontFamily: "Playfair Display" }}
@@ -94,6 +94,8 @@ const Contact = () => {
           <directionalLight position={[0, 0, 1]} intensity={2.5} />
           <ambientLight intensity={0.5} />
           <Suspense fallback={null}></Suspense>
+
+          <Dog />
         </Canvas>
       </div>
     </div>
