@@ -37,13 +37,6 @@ body, html {
   }
 }
 
-/* .card {
-  padding: 2em;
-} */
-/* 
-.read-the-docs {
-  color: #888;
-} */
 
 .NavBar {
   flex-direction: row;
@@ -157,7 +150,6 @@ body, html {
 
 .AboutMe{
   font-family: "Playfair Display", serif;
-  /* margin-bottom: 780px;  */
 }
 
 .MyProjects{
@@ -172,6 +164,7 @@ body, html {
   border-radius: 50%;
   margin-bottom: 500px;
 
+
 }
 
 .Container{
@@ -183,6 +176,28 @@ body, html {
   font-family: "Playfair Display", serif;
 }
 
-/* .Dog{
-  margin-top: 100px;
-} */
+.WebImage {
+  width: 100%;
+  height: 16em;
+  object-fit: cover;
+}
+
+.ComingSoon{
+  width: 100%;
+  height: 16em;
+  object-fit: cover;
+
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+  margin: auto 1rem;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  background-color: #1b07047d;
+}
+
+.price {
+  color: white;
+  font-size: 14px;
+}

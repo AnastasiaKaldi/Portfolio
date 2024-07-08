@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import picture from "../src/assets/about.png"; // Adjust the path to your image file
