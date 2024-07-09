@@ -37,7 +37,7 @@ function About() {
       </h1>
       <div className="Carousel ">
         <Carousel responsive={responsive}>
-          <div className="card rounded-sm">
+          <div className="card rounded-lg">
             <img className="webImage rounded-lg" src={Cosmos} alt="Cosmos" />
             <h3 className="text-white bold font-bold">Cosmos</h3>
             <p className="price">
@@ -63,7 +63,7 @@ function About() {
                   />
                 </a>
               </button>
-              <button className="">
+              <button className="rounded-lg">
                 {" "}
                 <a
                   href="https://ourcosmos.netlify.app/"
@@ -74,7 +74,7 @@ function About() {
               </button>
             </div>
           </div>
-          <div className="card rounded-sm">
+          <div className="card rounded-lg">
             <img className="webImage rounded-lg" src={Musa} alt="Musa" />
             <h3 className="text-white font-bold">Project Musa</h3>
             <p className="price">
@@ -112,7 +112,7 @@ function About() {
               </button>
             </div>
           </div>
-          <div className="card rounded-sm">
+          <div className="card rounded-lg">
             <img
               className="webImage rounded-lg"
               src={Under}
@@ -124,7 +124,7 @@ function About() {
               Leeds and their cuisines.
             </p>
           </div>
-          <div className="card rounded-sm">
+          <div className="card rounded-lg">
             <img
               className="webImage rounded-lg"
               src={Under}
