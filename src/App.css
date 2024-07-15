@@ -54,20 +54,27 @@ body, html {
 
 .AboutComponent {
   position: absolute;
-  right: -73%;
-  top: 40%;
+  right: -1000px;
+  top: 40px;
 }
 
 .ProjectsComponent {
   position: absolute;
-  left: 65%;
-  bottom: 15%;
+  left: 950px;
+  bottom: 14px;
 }
 
 .ReachComponent {
   position: absolute;
-  left: 75%;
-  bottom: 70%;
+  left: 1200px;
+  bottom: 69px;
+}
+
+.SoundComponent {
+  position: absolute;
+  left: 1400px;
+  bottom: 128px;
+
 }
 
 .Background {
@@ -121,7 +128,7 @@ body, html {
   transform: translateY(-50%);
   color: #fff;
   font-family: 'Molle', serif;
-  max-width: 400px;
+  max-width: 550px;
   margin-top: 450px;
   margin-right: 1050px;
 }

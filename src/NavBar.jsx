@@ -1,18 +1,50 @@
+/* eslint-disable no-unused-vars */
 import PropTypes from "prop-types";
-import { useState } from "react";
-// eslint-disable-next-line no-unused-vars
+import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { AnimatePresence, motion } from "framer-motion";
+import Icon from "../src/assets/soundOn.png";
+import Icon2 from "../src/assets/soundOff.png";
+import sound from "../src/assets/peace.mp3";
 
 function NavBar() {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [audio] = useState(new Audio(sound));
+
+  useEffect(() => {
+    const playAudio = () => {
+      audio.play().catch((error) => {
+        console.error("Error playing the audio:", error);
+      });
+      document.removeEventListener("click", playAudio);
+    };
+
+    document.addEventListener("click", playAudio);
+
+    return () => {
+      document.removeEventListener("click", playAudio);
+    };
+  }, [audio]);
+
+  const togglePlayPause = () => {
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play().catch((error) => {
+        console.error("Error playing the audio:", error);
+      });
+    }
+    setIsPlaying(!isPlaying);
+  };
+
   return (
-    <div className="NavBar fixed top-0 left-0 w-full  z-50">
+    <div className="NavBar fixed top-0 left-0 w-full z-50">
       <a
         href="/"
         className="flex items-center space-x-3 rtl:space-x-reverse shadow-md"
       >
         <span
-          className="self-center text-4xl font-semibold whitespace-nowrap text-purple-800 -mb-28 "
+          className="self-center text-4xl font-semibold whitespace-nowrap text-purple-800 -mb-28"
           style={{ fontFamily: "Playfair Display" }}
         >
           AK
@@ -20,7 +52,7 @@ function NavBar() {
       </a>
       <div className="AboutComponent text-m relative container mx-auto py-4 mr-80 space-x-8">
         <FlyoutLink href="/" FlyoutContent={<AboutContent />}>
-          <span style={{ fontFamily: "Playfair Display" }}> About</span>
+          <span style={{ fontFamily: "Playfair Display" }}>About</span>
         </FlyoutLink>
       </div>
       <div className="ProjectsComponent text-m relative container mx-auto py-4 ml-80 flex space-x-8">
@@ -32,6 +64,23 @@ function NavBar() {
         <FlyoutLink href="/contact" FlyoutContent={<ReachContent />}>
           <span style={{ fontFamily: "Playfair Display" }}>Get in touch</span>
         </FlyoutLink>
+      </div>
+      <div className="SoundComponent relative container mx-auto py-4 ml-80 flex space-x-8">
+        <button onClick={togglePlayPause}>
+          {isPlaying ? (
+            <img
+              src={Icon2}
+              alt="icon"
+              style={{ width: "30px", height: "30px" }}
+            />
+          ) : (
+            <img
+              src={Icon}
+              alt="icon"
+              style={{ width: "30px", height: "30px" }}
+            />
+          )}
+        </button>
       </div>
     </div>
   );
