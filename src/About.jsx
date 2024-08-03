@@ -2,10 +2,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import picture from "../src/assets/about.png"; // Adjust the path to your image file
-import { FaReact, FaPython, FaJava, FaFigma } from "react-icons/fa"; // Importing icons
-import { SiC } from "react-icons/si";
-import kaboomLogo from "../src/assets/Kaboom.png"; // Importing SVG logo
-import threeJsLogo from "../src/assets/Three.png"; // Importing PNG logo for Three.js
+import music from "../src/assets/music.gif";
+import coding from "../src/assets/coding.gif";
+import reading from "../src/assets/reading.gif";
+import cooking from "../src/assets/cooking.gif";
+import gamer from "../src/assets/travel.gif"; // Adjust the path to your image file
 
 function About() {
   return (
@@ -28,28 +29,41 @@ function About() {
               brings a lot of joy to my life.
             </p>
           </div>
-          <div className="mt-24 flex flex-wrap gap-4">
-            <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-              <FaReact className="text-4xl text-blue-500" />
-            </div>
-            <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-              <img src={kaboomLogo} alt="Kaboom.js" className="w-12 h-12" />
-            </div>
-            <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-              <img src={threeJsLogo} alt="Three.js" className="w-12 h-12" />
-            </div>
-            <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-              <FaPython className="text-4xl text-yellow-300" />
-            </div>
-            <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-              <FaJava className="text-4xl text-red-500" />
-            </div>
-            <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-              <SiC className="text-4xl text-gray-400" />
-            </div>
-            <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-              <FaFigma className="text-4xl text-purple-500" />
-            </div>
+          <div className="flex flex-wrap mt-8 gap-4">
+            {" "}
+            {/* Added flex properties */}
+            <img
+              src={music}
+              alt="Music GIF"
+              className="rounded-lg shadow-lg " // Adjust width as needed
+            />
+            <p className="text-white text-xl" style={{ fontFamily: "Molle" }}>
+              Music
+            </p>
+            <img
+              src={coding}
+              alt="Coding GIF"
+              className="rounded-lg shadow-lg " // Adjust width as needed
+            />
+            <p className="text-white text-xl" style={{ fontFamily: "Molle" }}>
+              Coding
+            </p>
+            <img
+              src={cooking}
+              alt="Cooking GIF"
+              className="rounded-lg shadow-lg " // Adjust width as needed
+            />
+            <p className="text-white text-xl" style={{ fontFamily: "Molle" }}>
+              Cooking
+            </p>
+            <img
+              src={gamer}
+              alt="Coding GIF"
+              className="rounded-lg shadow-lg" // Adjust width as needed
+            />
+            <p className="text-white text-xl" style={{ fontFamily: "Molle" }}>
+              Travel
+            </p>
           </div>
         </div>
         <div>

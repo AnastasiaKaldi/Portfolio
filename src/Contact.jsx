@@ -3,8 +3,6 @@ import React, { useState, useRef, Suspense } from "react";
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber"; // Correct named import for Canvas
 import Dog from "./Dog.jsx";
-import gmail from "../src/assets/gmail.webp";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -36,24 +34,6 @@ const Contact = () => {
           >
             Get in touch
           </h1>
-          <div className="flex items-center space-x-8">
-            <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg hover:bg-gray-300 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-              <img src={gmail} alt="Gmail" className="w-8 h-8" />
-            </div>
-            <a
-              href="https://www.linkedin.com/in/anastasia-kaldi-3685691b8/"
-              className="button-link"
-            >
-              <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg hover:bg-gray-300 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-                <FaLinkedin className="text-2xl text-blue-500" />
-              </div>
-            </a>
-            <a href="https://github.com/anastasiakaldi" className="button-link">
-              <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg hover:bg-gray-300 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-                <FaGithub className="text-2xl text-black" />
-              </div>
-            </a>
-          </div>
         </div>
         <form
           className="w-full flex flex-col text-white gap-7 mt-10"
