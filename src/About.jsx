@@ -4,7 +4,6 @@ import React from "react";
 import picture from "../src/assets/about.png"; // Adjust the path to your image file
 import music from "../src/assets/music.gif";
 import coding from "../src/assets/coding.gif";
-import reading from "../src/assets/reading.gif";
 import cooking from "../src/assets/cooking.gif";
 import gamer from "../src/assets/travel.gif"; // Adjust the path to your image file
 

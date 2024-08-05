@@ -7,7 +7,7 @@ import Contact from "../src/Contact.jsx";
 // App Component
 function App() {
   return (
-    <div id="root">
+    <div className="Con" id="root">
       <HomePage />
       <About />
       <Projects />

@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
-import { Link as ScrollLink } from "react-scroll";
 import { AnimatePresence, motion } from "framer-motion";
 import Icon from "../src/assets/soundOn.png";
 import Icon2 from "../src/assets/soundOff.png";
@@ -50,13 +49,13 @@ function NavBar() {
           AK
         </span>
       </a>
-      <div className="AboutComponent text-m relative container mx-auto py-4 mr-80 space-x-8">
-        <FlyoutLink href="/" FlyoutContent={<AboutContent />}>
-          <span style={{ fontFamily: "Playfair Display" }}>About</span>
+      <div className="HomeComponent text-m relative container mx-auto py-4 mr-80 space-x-8">
+        <FlyoutLink href="/about" FlyoutContent={<HomeContent />}>
+          <span style={{ fontFamily: "Playfair Display" }}>Home</span>
         </FlyoutLink>
       </div>
       <div className="ProjectsComponent text-m relative container mx-auto py-4 ml-80 flex space-x-8">
-        <FlyoutLink href="/" FlyoutContent={<ProjectsContent />}>
+        <FlyoutLink href="/projects" FlyoutContent={<ProjectsContent />}>
           <span style={{ fontFamily: "Playfair Display" }}>Projects</span>
         </FlyoutLink>
       </div>
@@ -128,12 +127,8 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
   );
 };
 
-const AboutContent = () => {
-  return (
-    <div className="">
-      <h3 className="font-semibold"></h3>
-    </div>
-  );
+const HomeContent = () => {
+  return <div className=""></div>;
 };
 
 const ProjectsContent = () => {
