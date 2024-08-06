@@ -50,7 +50,7 @@ function NavBar() {
         </span>
       </a>
       <div className="HomeComponent text-m relative container mx-auto py-4 mr-80 space-x-8">
-        <FlyoutLink href="/about" FlyoutContent={<HomeContent />}>
+        <FlyoutLink href="/" FlyoutContent={<HomeContent />}>
           <span style={{ fontFamily: "Playfair Display" }}>Home</span>
         </FlyoutLink>
       </div>
@@ -127,17 +127,30 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
   );
 };
 
-const HomeContent = () => {
-  return <div className=""></div>;
-};
-
 const ProjectsContent = () => {
-  return <div className=""></div>;
+  return (
+    <div className="w-64 bg-purple-200 rounded-xl p-6">
+      <div className="mb-3 space-y-3">
+        <a
+          href="https://ourcosmos.netlify.app/"
+          className="block text-m text-purple-400 hover:underline"
+        >
+          <span style={{ fontFamily: "Playfair Display" }}>Cosmos</span>
+        </a>
+        <a
+          href="https://projectmusa.netlify.app/"
+          className="block text-m text-purple-400 hover:underline"
+        >
+          <span style={{ fontFamily: "Playfair Display" }}>Project Musa</span>
+        </a>
+      </div>
+    </div>
+  );
 };
 
-const ReachContent = () => {
-  return <div className=""></div>;
-};
+const HomeContent = () => {};
+
+const ReachContent = () => {};
 
 FlyoutLink.propTypes = {
   children: PropTypes.node.isRequired,

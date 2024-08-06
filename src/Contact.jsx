@@ -27,17 +27,17 @@ const Contact = () => {
 
   return (
     <div className="Contact w-full h-screen flex">
-      <div className="flex-1 flex flex-col p-3 md:p-10">
+      <div className="flex-1 flex flex-col p-3 md:p-10 mt-16">
         <div className="flex items-center space-x-14">
           <h1
-            className="text-white text-6xl"
+            className="text-white text-6xl font-bold"
             style={{ fontFamily: "Playfair Display" }}
           >
             Get in touch
           </h1>
         </div>
         <form
-          className="w-full flex flex-col text-white gap-7 mt-10"
+          className="w-full flex flex-col text-white gap-7 font-bold mt-10"
           style={{ fontFamily: "Playfair Display" }}
           onSubmit={handleSubmit}
         >

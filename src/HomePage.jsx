@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Island from "../src/models/Island.jsx";
 import gmail from "../src/assets/gmail.webp";
 import {
