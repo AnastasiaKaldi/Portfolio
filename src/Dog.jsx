@@ -27,7 +27,7 @@ export function Model(props) {
   });
 
   return (
-    <group ref={group} {...props} position={[0, -1.4, -0.5]} dispose={null}>
+    <group ref={group} {...props} position={[0, -2, -0.5]} dispose={null}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
           <group

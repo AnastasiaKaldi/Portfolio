@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Icon from "../src/assets/soundOn.png";
 import Icon2 from "../src/assets/soundOff.png";
-import sound from "../src/assets/peace.mp3";
+import sound from "../src/assets/hoax.mp3";
 
 function NavBar() {
   const [isPlaying, setIsPlaying] = useState(false);

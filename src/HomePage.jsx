@@ -47,11 +47,11 @@ function HomePage() {
             Hi, I'm a Leeds based self-taught developer with a passion for
             creating and problem-solving. I spent a year in a computer science
             course and hold a Bachelor of Arts in Music. My diverse background
-            fuels my creativity and approach to coding. Over the past year, I've
+            fuels my creativity and approach to coding. Over the years, I've
             honed my skills in various technologies including Figma, React,
             Kaboom, Java, Python, and C. Whether I'm designing user interfaces,
             building dynamic web applications, or developing interactive games,
-            I enjoy turning ideas into reality.
+            I enjoy turning my crazy ideas into reality.
           </p>
           <div className="flex flex-wrap gap-4 mt-10">
             {" "}
