@@ -20,10 +20,10 @@ function HomePage() {
         {" "}
         {/* Adjusted mt-20 to mt-40 to move everything down */}
         <div className="title-text">
-          <h1 className="text-7xl mb-4 mt-10">
+          <h1 className="text-6xl mb-4 mt-10">
             {" "}
             {/* Added mt-10 to move the title further down */}
-            Hello, I'm Anastasia!
+            Hello, I'm Anastasia Kaldi!
           </h1>
           <div className="flex space-x-4 mb-8">
             <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg hover:bg-gray-300 transition duration-300 transform hover:-translate-y-1 hover:scale-110">

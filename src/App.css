@@ -249,3 +249,9 @@ body, html {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
+
+.footer{
+  background-color: #a47ce1;
+  scroll-snap-align: start;
+
+}

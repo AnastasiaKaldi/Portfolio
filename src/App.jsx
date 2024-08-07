@@ -3,6 +3,7 @@ import About from "./About.jsx";
 import Projects from "./Projects.jsx";
 import HomePage from "../src/HomePage.jsx";
 import Contact from "../src/Contact.jsx";
+import Footer from "../src/Footer.jsx";
 
 // App Component
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }
