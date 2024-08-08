@@ -17,6 +17,7 @@
     "@splinetool/react-spline": "^3.1.0",
     "@splinetool/runtime": "^1.7.2",
     "emailjs-com": "^3.2.0",
+    "esbuild": "^0.23.0",
     "framer-motion": "^11.2.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
