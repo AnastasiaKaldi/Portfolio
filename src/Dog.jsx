@@ -11,12 +11,11 @@ Title: bulbasaur
 import React, { useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
+import pokemon from "../src/assets/3d/bulbasaur.glb";
 
 export function Model(props) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF(
-    "../src/assets/3d/bulbasaur.glb"
-  );
+  const { nodes, materials, animations } = useGLTF(pokemon);
   const { actions } = useAnimations(animations, group);
 
   // Use useFrame to update rotation on each frame
