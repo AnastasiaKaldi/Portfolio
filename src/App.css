@@ -22,8 +22,12 @@ html, body {
   height: 100%;
 }
 
-
-
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
 
 @keyframes logo-spin {
   from {
@@ -83,7 +87,7 @@ html, body {
 .Background {
   background-color: #a47ce1;
   display: flex;
-  flex-direction: column;
+ 
   justify-content: center;
   align-items: center;
   position: relative;
@@ -195,6 +199,37 @@ html, body {
     max-height: 85%; 
     padding: 15px;
     
+}
+
+.testcontainer {
+  background-color: blue;
+  padding: 10%;
+  margin: 10%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.testcontainer2 {
+  background-color: blue;
+  padding: 10%;
+  margin: 10%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.homeContainer{
+  background-color: #d296e163;
+  position: absolute;
+    top: 25rem; 
+    left: 10rem;
+    max-width: 40%; 
+    max-height: 85%; 
+    padding: 200px;
+
 }
 
 .TheText{

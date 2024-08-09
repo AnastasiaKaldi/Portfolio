@@ -42,7 +42,7 @@ function HomePage() {
               </div>
             </a>
           </div>
-          <p className="text-xl mt-4 mb-8">
+          <p className="homeContainer text-xl mt-4 mb-8">
             Hi, I'm a Leeds based self-taught developer with a passion for
             creating and problem-solving. I spent a year in a computer science
             course and hold a Bachelor of Arts in Music. My diverse background

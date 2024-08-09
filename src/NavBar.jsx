@@ -98,7 +98,6 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
       <a
         href={href}
         className="relative h-fit w-fit text-white hover:text-purple-800"
-        style={{ fontFamily: "Times New Roman" }}
       >
         {children}
         <span
