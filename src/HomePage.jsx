@@ -11,7 +11,6 @@ import {
 import { SiGmail } from "react-icons/si";
 import { SiThreedotjs } from "react-icons/si";
 import { SiC } from "react-icons/si";
-import kaboomLogo from "../src/assets/Kaboom.png";
 
 function HomePage() {
   return (
