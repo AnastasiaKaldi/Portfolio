@@ -72,7 +72,7 @@
 
 }
 
-/* .Background {
+.Background {
   background-color: #a47ce1;
   display: flex;
   flex-direction: column;
@@ -80,7 +80,7 @@
   align-items: center;
   position: relative;
   scroll-snap-align: start;
-} */
+}
 
 .Spline {
   transform: scale(0.5);
