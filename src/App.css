@@ -185,9 +185,16 @@ html, body {
 
 }
 
-.Container{
+.abtContainer{
 
   background-color: #d296e163;
+  position: absolute;
+    top: 25rem; 
+    left: 10rem; 
+    max-width: 40%; 
+    max-height: 85%; 
+    padding: 15px;
+    
 }
 
 .TheText{

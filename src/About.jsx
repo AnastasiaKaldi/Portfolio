@@ -12,8 +12,8 @@ function About() {
     <section className="About p-8">
       <div className="grid grid-cols-2 gap-4 mt-28">
         <div>
-          <h1 className="AboutMe text-7xl mb-24 ml-14 text-white">About Me</h1>
-          <div className="Container p-8 rounded-lg shadow-lg mt-16">
+          <h1 className=" text-7xl mb-24 ml-14 text-white">About Me</h1>
+          <div className="abtContainer rounded-lg shadow-lg">
             <p className="TheText text-m text-white mt-4">
               I have a diverse range of hobbies that keep me creatively engaged
               and constantly evolving. They play a crucial role in both my
