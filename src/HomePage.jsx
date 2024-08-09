@@ -60,10 +60,10 @@ function HomePage() {
               <FaReact className="text-4xl text-blue-500" />
             </div>
             <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-              <img src={kaboomLogo} alt="Kaboom.js" className="w-12 h-12" />
+              <img src={kaboomLogo} alt="Kaboom.js" className="w-10 h-10" />
             </div>
             <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-              <img src={threeJsLogo} alt="Three.js" className="w-12 h-12" />
+              <img src={threeJsLogo} alt="Three.js" className="w-10 h-10" />
             </div>
             <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
               <FaPython className="text-4xl text-yellow-300" />
