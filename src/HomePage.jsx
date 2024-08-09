@@ -59,13 +59,13 @@ function HomePage() {
             <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
               <FaReact className="text-4xl text-blue-500" />
             </div>
-            <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
+            {/* <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
               <img
                 src={kaboomLogo}
                 alt="Kaboom.js"
                 className="max-w-4 max-h-4"
               />
-            </div>
+            </div> */}
             <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
               <SiThreedotjs className="text-4xl text-white" />
             </div>
