@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import Island from "../src/models/Island.jsx";
-import gmail from "../src/assets/gmail.webp";
 import {
   FaGithub,
   FaLinkedin,
@@ -9,9 +8,10 @@ import {
   FaJava,
   FaFigma,
 } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+import { SiThreedotjs } from "react-icons/si";
 import { SiC } from "react-icons/si";
 import kaboomLogo from "../src/assets/Kaboom.png";
-import threeJsLogo from "../src/assets/Three.png";
 
 function HomePage() {
   return (
@@ -27,7 +27,7 @@ function HomePage() {
           </h1>
           <div className="flex space-x-4 mb-8">
             <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg hover:bg-gray-300 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-              <img src={gmail} alt="Gmail" className="w-8 h-8" />
+              <SiGmail className="text-2xl text-red-500" />
             </div>
             <a
               href="https://www.linkedin.com/in/anastasia-kaldi-3685691b8/"
@@ -67,11 +67,7 @@ function HomePage() {
               />
             </div>
             <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-              <img
-                src={threeJsLogo}
-                alt="Three.js"
-                className="max-w-10 max-h-10"
-              />
+              <SiThreedotjs className="text-4xl text-white" />
             </div>
             <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
               <FaPython className="text-4xl text-yellow-300" />
