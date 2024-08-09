@@ -63,7 +63,7 @@ function HomePage() {
               <img
                 src={kaboomLogo}
                 alt="Kaboom.js"
-                className="max-w-10 max-h-10"
+                className="max-w-4 max-h-4"
               />
             </div>
             <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
