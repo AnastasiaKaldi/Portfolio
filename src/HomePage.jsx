@@ -12,7 +12,8 @@ import {
 import { SiC } from "react-icons/si";
 import kaboomLogo from "../src/assets/Kaboom.png";
 import threeJsLogo from "../src/assets/Three.png";
--function HomePage() {
+
+function HomePage() {
   return (
     <section>
       <div className="Background mt-20">
@@ -83,6 +84,6 @@ import threeJsLogo from "../src/assets/Three.png";
       </div>
     </section>
   );
-};
+}
 
 export default HomePage;
