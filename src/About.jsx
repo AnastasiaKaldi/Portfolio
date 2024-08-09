@@ -90,9 +90,9 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="mt-36">
+        {/* <div className="mt-36">
           <img src={picture} alt="profile" className="rounded-lg shadow-lg" />
-        </div>
+        </div> */}
       </div>
     </section>
   );
