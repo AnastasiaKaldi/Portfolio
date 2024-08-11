@@ -38,7 +38,7 @@ function About() {
       <div className="Carousel ">
         <Carousel responsive={responsive}>
           <div className="card rounded-lg">
-            {/* <img className="webImage rounded-lg" src={Cosmos} alt="Cosmos" /> */}
+            <img className="webImage rounded-lg" src={Cosmos} alt="Cosmos" />
             <h3 className="text-white bold font-bold">Cosmos</h3>
             <p className="price">
               Cosmos is an educational website designed to explore and present
@@ -75,7 +75,7 @@ function About() {
             </div>
           </div>
           <div className="card rounded-lg">
-            {/* <img className="webImage rounded-lg" src={Musa} alt="Musa" /> */}
+            <img className="webImage rounded-lg" src={Musa} alt="Musa" />
             <h3 className="text-white font-bold">Project Musa</h3>
             <p className="price">
               Project Musa is an experiment i created as a universiy project.
@@ -113,11 +113,11 @@ function About() {
             </div>
           </div>
           <div className="card rounded-lg">
-            {/* <img
+            <img
               className="webImage rounded-lg"
               src={Under}
               alt="Under Construction"
-            /> */}
+            />
             <h3 className="text-white font-bold">Restaurant Blog</h3>
             <p className="price">
               A blog website that showcases and rates different restaurants in
@@ -125,11 +125,11 @@ function About() {
             </p>
           </div>
           <div className="card rounded-lg">
-            {/* <img
+            <img
               className="webImage rounded-lg"
               src={Under}
               alt="Under Construction"
-            /> */}
+            />
             <h3 className="text-white font-bold">Something</h3>
             <p className="price">
               An educational website showcasing information.

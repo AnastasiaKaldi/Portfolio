@@ -8,9 +8,9 @@ import {
   FaJava,
   FaFigma,
 } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
 import { SiThreedotjs } from "react-icons/si";
 import { SiC } from "react-icons/si";
+import { SiGmail } from "react-icons/si";
 
 function HomePage() {
   return (
@@ -26,7 +26,7 @@ function HomePage() {
           </h1>
           <div className="flex space-x-4 mb-8">
             <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg hover:bg-gray-300 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-              <SiGmail className="text-2xl text-red-500" />
+              <SiGmail className="text-red-600" />
             </div>
             <a
               href="https://www.linkedin.com/in/anastasia-kaldi-3685691b8/"
@@ -52,19 +52,12 @@ function HomePage() {
             building dynamic web applications, or developing interactive games,
             I enjoy turning my crazy ideas into reality.
           </p>
-          <div className="flex flex-wrap gap-4 mt-10">
+          <div className="flex gap-4 mt-10">
             {" "}
             {/* Added mt-10 to move the bubbles further down */}
             <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
               <FaReact className="text-4xl text-blue-500" />
             </div>
-            {/* <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
-              <img
-                src={kaboomLogo}
-                alt="Kaboom.js"
-                className="max-w-4 max-h-4"
-              />
-            </div> */}
             <div className="flex items-center justify-center w-16 h-16 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
               <SiThreedotjs className="text-4xl text-white" />
             </div>
@@ -83,7 +76,6 @@ function HomePage() {
           </div>
         </div>
         <Island className="Spline" />{" "}
-        {/* Added mt-20 to move the Island component further down */}
       </div>
     </section>
   );
