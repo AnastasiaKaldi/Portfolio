@@ -277,7 +277,6 @@ body {
 
 /* Section Styles */
 section {
-  display: grid;
   place-items: center;
   align-content: center;
   min-height: 100vh;
@@ -305,10 +304,13 @@ a:hover {
 }
 
 .icon {
-  background-color: #a855f7; /* Purple background */
   padding: 1rem;
   border-radius: 50%;
   font-size: 2rem;
 }
 
 
+.Spline {
+  transform: scale(0.5);
+  width: 100%;
+}

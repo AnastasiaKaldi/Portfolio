@@ -98,7 +98,7 @@ import { SiThreedotjs, SiC, SiGmail } from "react-icons/si";
 function App() {
   return (
     <section>
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center w-full">
+      <div className="p-10 grid grid-cols-2 items-center">
         {/* Left Column */}
         <div className="p-8 md:p-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -125,7 +125,7 @@ function App() {
             </a>
           </div>
 
-          <p className="text-lg md:text-xl mb-4">
+          <p className="text-xl max-w-xl mb-4">
             Hi, I’m a Leeds based self-taught developer with a passion for
             creating and problem-solving. I spent a year in a computer science
             course and hold a Bachelor of Arts in Music. My diverse background
@@ -158,7 +158,7 @@ function App() {
         </div>
 
         {/* Right Column */}
-        <div className="p-8 md:p-16">
+        <div className="h-full">
           <Island className="Spline" />
         </div>
       </div>
