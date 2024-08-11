@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+/* @font-face {
   font-family: 'Playfair Display';
   src: url('/public/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf');
 }
@@ -12,31 +19,21 @@
   src: url('/public/Molle/Molle-Italic.ttf');
 }
 
-/* Global Styles */
 body {
   font-family: 'Playfair Display', serif;
-  background-color: #a47ce1; /* Same background color as your section */
+  background-color: #a47ce1; 
   color: white;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Section Styles */
 section {
   place-items: center;
   align-content: center;
   min-height: 100vh;
 }
 
-/* section {
-  display: grid;
-  place-items: center;
-  align-content: center;
-  min-height: 100vh;
-} */
-
-/* Specific Styles */
 h1 {
   font-family: 'Molle', cursive;
 }
@@ -47,10 +44,9 @@ a {
 }
 
 a:hover {
-  color: #ffde59; /* Example hover color for links */
+  color: #ffde59;
 }
 
-/* Additional Custom Styles if needed */
 .icon-container {
   display: flex;
   gap: 1rem;
@@ -66,4 +62,4 @@ a:hover {
 .Spline {
   transform: scale(0.5);
   width: 100%;
-}
+} */

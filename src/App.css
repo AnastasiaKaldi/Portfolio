@@ -1,4 +1,4 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -40,7 +40,6 @@ body, html {
     animation: logo-spin infinite 20s linear;
   }
 }
-
 
 .NavBar {
   flex-direction: row;
@@ -249,4 +248,4 @@ body, html {
   background-color: #a47ce1;
   scroll-snap-align: start;
 
-} */
+}
