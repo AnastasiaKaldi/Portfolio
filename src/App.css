@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -146,7 +146,6 @@ body, html {
 .About{
   background-color: #a47ce1;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -250,4 +249,66 @@ body, html {
   background-color: #a47ce1;
   scroll-snap-align: start;
 
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/public/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf');
 }
+
+@font-face {
+  font-family: 'Molle';
+  src: url('/public/Molle/Molle-Italic.ttf');
+}
+
+/* Global Styles */
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #a47ce1; /* Same background color as your section */
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Section Styles */
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+
+/* Specific Styles */
+h1 {
+  font-family: 'Molle', cursive;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffde59; /* Example hover color for links */
+}
+
+/* Additional Custom Styles if needed */
+.icon-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  background-color: #a855f7; /* Purple background */
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+
