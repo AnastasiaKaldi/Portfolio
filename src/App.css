@@ -77,7 +77,6 @@ body, html {
   position: absolute;
   left: 1400px;
   bottom: 128px;
-
 }
 
 .Background {
@@ -89,6 +88,8 @@ body, html {
   position: relative;
   scroll-snap-align: start;
 }
+
+
 
 .Spline {
   transform: scale(0.5);
@@ -248,4 +249,40 @@ body, html {
   background-color: #a47ce1;
   scroll-snap-align: start;
 
+}
+/* Mobile Version */
+
+@media(max-width: 600px) {
+  .NavBar {
+    display:none;
+  }
+  .NavMob{
+    background-color: #a47ce1;
+    position: relative;
+  }
+
+  .home{
+    display:none;
+  }
+
+  .homeMob{
+    background-color: #a47ce1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  scroll-snap-align: start;
+  }
+
+  .About{
+    display:none;
+  }
+
+  .TextMob{
+  color: #fff;
+  font-family: 'Molle', serif;
+  max-width: 350px;
+  margin-bottom: 250px;
+  }
 }

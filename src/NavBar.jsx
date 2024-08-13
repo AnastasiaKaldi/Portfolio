@@ -10,21 +10,6 @@ function NavBar() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [audio] = useState(new Audio(sound));
 
-  useEffect(() => {
-    const playAudio = () => {
-      audio.play().catch((error) => {
-        console.error("Error playing the audio:", error);
-      });
-      document.removeEventListener("click", playAudio);
-    };
-
-    document.addEventListener("click", playAudio);
-
-    return () => {
-      document.removeEventListener("click", playAudio);
-    };
-  }, [audio]);
-
   const togglePlayPause = () => {
     if (isPlaying) {
       audio.pause();
