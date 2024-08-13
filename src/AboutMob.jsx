@@ -9,8 +9,8 @@ import travel from "../src/assets/travel.gif";
 
 function About() {
   return (
-    <section className="AboutPage p-8">
-      <div className=" About grid grid-cols-2 gap-4 mt-28">
+    <section className="About p-8">
+      <div className="grid grid-cols-2 gap-4 mt-28">
         <div>
           <h1 className="AboutMe text-7xl mb-24 ml-14 text-white">About Me</h1>
           <div className="Container p-8 rounded-lg shadow-lg mt-16">

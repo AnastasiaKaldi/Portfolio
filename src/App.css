@@ -275,9 +275,10 @@ body, html {
   scroll-snap-align: start;
   }
 
-  .About{
+  .AboutPage{
     display:none;
   }
+
 
   .TextMob{
   color: #fff;
@@ -285,4 +286,26 @@ body, html {
   max-width: 350px;
   margin-bottom: 250px;
   }
+
+  .Projects{
+    background-color: #a47ce1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    position: relative;
+    scroll-snap-align: start;
+    display: none;
+  }
+
+  .ProjectsPage{
+    display:none;
+  }
+
+  .ContactPage{
+    display:none;
+  }
+  
 }
