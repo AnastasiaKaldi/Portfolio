@@ -250,6 +250,13 @@ body, html {
   scroll-snap-align: start;
 
 }
+
+.AboutMob{display:none;}
+/* .NavMob{display:none;} */
+.homeMob{display:none;}
+.ProjectsMob{display:none;}
+
+
 /* Mobile Version */
 
 @media(max-width: 600px) {
@@ -287,7 +294,7 @@ body, html {
   margin-bottom: 250px;
   }
 
-  .Projects{
+  .ProjectsMob{
     background-color: #a47ce1;
     display: flex;
     flex-direction: column;
@@ -297,7 +304,6 @@ body, html {
     width: 100%;
     position: relative;
     scroll-snap-align: start;
-    display: none;
   }
 
   .ProjectsPage{
@@ -307,5 +313,38 @@ body, html {
   .ContactPage{
     display:none;
   }
+
+  .AboutMob{
+    background-color: #a47ce1;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    scroll-snap-align: start;
+  }
+
+  .About{
+    display:none;
+  }
+
+  .AboutMe{
+    margin-bottom: 40px;
+  }
+ .AboutPhoto{
+  margin-bottom: 10px;
+  scale: 0.8;
+ } 
+
+ .Container{
+
+  background-color: #d296e163;
+  scale: 0.9;
   
+}
+
+.Gifs{
+  scale:0.5;
+}
 }

@@ -28,7 +28,7 @@ function About() {
   };
 
   return (
-    <section className="Projects">
+    <section className="ProjectsMob">
       <h1
         className="MyProjects text-white text-7xl"
         style={{ fontFamily: "Playfair Display" }}
