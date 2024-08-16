@@ -22,7 +22,7 @@ function About() {
           </div>
           <div className="Container rounded-lg shadow-lg">
             <p
-              className="text-xs text-white"
+              className="text-sm text-white"
               style={{ fontFamily: "Playfair Display" }}
             >
               I have a diverse range of hobbies that keep me creatively engaged

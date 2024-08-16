@@ -38,7 +38,7 @@ function HomePage() {
             </a>
           </div>
           <p
-            className="text-xs mt-4 mb-8"
+            className="text-sm mt-4 mb-8"
             style={{ fontFamily: "Playfair Display" }}
           >
             Hi, I'm a Leeds based self-taught developer with a passion for

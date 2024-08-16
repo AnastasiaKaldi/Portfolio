@@ -30,12 +30,12 @@ function About() {
   return (
     <section className="ProjectsMob">
       <h1
-        className="MyProjects text-white text-7xl"
+        className="MyProjects text-white text-4xl"
         style={{ fontFamily: "Playfair Display" }}
       >
         Projects
       </h1>
-      <div className="Carousel ">
+      <div className="Carousel">
         <Carousel responsive={responsive}>
           <div className="card rounded-lg">
             <img className="webImage rounded-lg" src={Cosmos} alt="Cosmos" />
