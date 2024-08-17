@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -29,12 +28,15 @@ function About() {
 
   return (
     <section className="ProjectsMob">
-      <h1
-        className="MyProjects text-white text-4xl"
-        style={{ fontFamily: "Playfair Display" }}
-      >
-        Projects
-      </h1>
+      {/* Wrap the title in a div */}
+      <div className="title-container">
+        <h1
+          className="MyProjects text-white text-4xl"
+          style={{ fontFamily: "Playfair Display" }}
+        >
+          Projects
+        </h1>
+      </div>
       <div className="Carousel">
         <Carousel responsive={responsive}>
           <div className="card rounded-lg">

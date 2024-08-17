@@ -27,7 +27,7 @@ const NavBarMob = () => {
 
   return (
     <div className="NavMob">
-      <nav className="dark:bg-gray-800 dark:border-gray-700">
+      <nav className="">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative">
           <a
             href="#"
