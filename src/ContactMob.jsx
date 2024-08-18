@@ -26,12 +26,12 @@ const Contact = () => {
   const handleSubmit = () => {};
 
   return (
-    <div className="ContactPage">
+    <div className="ContactMob">
       <div className="Contact w-full h-screen flex">
         <div className="flex-1 flex flex-col p-3 md:p-10 mt-40">
           <div className="flex items-center space-x-14">
             <h1
-              className="text-white text-7xl ml-14"
+              className="text-white text-4xl ml-14"
               style={{ fontFamily: "Playfair Display" }}
             >
               Get in touch
@@ -93,7 +93,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="lg:w-1/2 w-full lg:h-auto md:h-[500px] h-[200px]">
+        {/* <div className="lg:w-1/2 w-full lg:h-auto md:h-[500px] h-[200px]">
           <Canvas
             camera={{ position: [0, 0, 5], fov: 75, near: 0.1, far: 1000 }}
           >
@@ -103,7 +103,7 @@ const Contact = () => {
 
             <Dog />
           </Canvas>
-        </div>
+        </div> */}
       </div>
     </div>
   );

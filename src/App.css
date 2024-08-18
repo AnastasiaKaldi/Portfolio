@@ -311,9 +311,10 @@ body, html {
     display:none;
   }
 
-  .ContactPage{
-    display:none;
-  }
+.ContactPage{
+  display:none;
+}
+
 
   .AboutMob{
     background-color: #a47ce1;
