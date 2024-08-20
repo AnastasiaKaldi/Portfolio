@@ -28,10 +28,11 @@ const Contact = () => {
   return (
     <div className="ContactMob">
       <div className="Contact w-full h-screen flex">
-        <div className="flex-1 flex flex-col p-3 md:p-10 mt-40">
+        {/* Adjusted margin-top from mt-40 to mt-20 to move content upwards */}
+        <div className="flex-1 flex flex-col p-3 md:p-10 mt-20">
           <div className="flex items-center space-x-14">
             <h1
-              className="text-white text-4xl ml-14"
+              className="text-white text-4xl ml-16"
               style={{ fontFamily: "Playfair Display" }}
             >
               Get in touch
@@ -83,7 +84,7 @@ const Contact = () => {
             </label>
             <button
               type="submit"
-              className="btn w-full h-12 mt-8 text-white bg-purple-950 rounded-sm"
+              className="btn min-w-72 h-10  text-white bg-purple-950 rounded-sm"
               style={{ fontFamily: "Playfair Display" }}
               disabled={isLoading}
               onFocus={handleFocus}
@@ -93,17 +94,6 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        {/* <div className="lg:w-1/2 w-full lg:h-auto md:h-[500px] h-[200px]">
-          <Canvas
-            camera={{ position: [0, 0, 5], fov: 75, near: 0.1, far: 1000 }}
-          >
-            <directionalLight position={[0, 0, 1]} intensity={2.5} />
-            <ambientLight intensity={0.5} />
-            <Suspense fallback={null}></Suspense>
-
-            <Dog />
-          </Canvas>
-        </div> */}
       </div>
     </div>
   );
