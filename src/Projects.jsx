@@ -28,11 +28,11 @@ function About() {
   };
 
   return (
-    <section className="ProjectsPage">
+    <div className="ProjectsPage">
       <div className="Projects">
         <h1
           className="MyProjects text-white text-7xl"
-          style={{ fontFamily: "Playfair Display" }}
+          style={{ fontFamily: "Playfair Display", marginTop: "10rem" }}
         >
           Projects
         </h1>
@@ -140,7 +140,7 @@ function About() {
           </Carousel>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
