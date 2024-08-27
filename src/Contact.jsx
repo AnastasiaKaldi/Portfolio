@@ -12,6 +12,10 @@ const Contact = () => {
     message: "",
   });
 
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   const [isLoading, setIsLoading] = useState(false);
 
   const formRef = useRef(null);
@@ -27,8 +31,26 @@ const Contact = () => {
     e.preventDefault();
 
     const serviceID = "service_l4xq749";
-    const templateID = "";
-    const publicKEY = "";
+    const templateID = "template_5xmmk7o";
+    const publicKey = "c0f42xh2ILJTB76DN";
+
+    const templatePar = {
+      from_name: name,
+      from_email: email,
+      to_name: "Anastasia",
+      message: message,
+    };
+    emailjs
+      .send(serviceID, templateID, templatePar, publicKey)
+      .then((response) => {
+        console.log("Email was successfully sent!", response);
+        setName("");
+        setEmail("");
+        setMessage("");
+      })
+      .catch((error) => {
+        console.log("Error sending email:", error);
+      });
   };
 
   return (
@@ -56,8 +78,8 @@ const Contact = () => {
                 className="input rounded-sm w-full h-12 text-black pl-4"
                 placeholder="Maria"
                 required
-                value={form.name}
-                onChange={handleChange}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </label>
 
@@ -69,8 +91,8 @@ const Contact = () => {
                 className="input rounded-sm w-full h-12 text-black pl-4"
                 placeholder="mariasmith@gmail.com"
                 required
-                value={form.email}
-                onChange={handleChange}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </label>
 
