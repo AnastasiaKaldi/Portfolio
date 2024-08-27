@@ -153,6 +153,12 @@ body, html {
 
 }
 
+.AboutPage{
+  background-color: #a47ce1;
+}
+
+
+
 .Projects{
   background-color: #a47ce1;
   display: flex;
