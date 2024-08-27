@@ -23,7 +23,13 @@ const Contact = () => {
   const handleFocus = () => {};
   const handleBlur = () => {};
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const serviceID = "service_l4xq749";
+    const templateID = "";
+    const publicKEY = "";
+  };
 
   return (
     <section className="ContactPage">
