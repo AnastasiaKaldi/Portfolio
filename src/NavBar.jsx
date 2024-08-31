@@ -29,7 +29,7 @@ function NavBar() {
           className="flex items-center space-x-3 rtl:space-x-reverse shadow-md"
         >
           <span
-            className="self-center text-4xl font-semibold whitespace-nowrap text-purple-800 -mb-28"
+            className="self-center text-4xl font-semibold whitespace-nowrap ml-16 text-purple-800 -mb-28"
             style={{ fontFamily: "Playfair Display" }}
           >
             AK

@@ -11,6 +11,7 @@ import {
 import { SiThreedotjs } from "react-icons/si";
 import { SiC } from "react-icons/si";
 import { SiGmail } from "react-icons/si";
+import { TbBrandJavascript } from "react-icons/tb";
 
 function HomePage() {
   return (
@@ -45,10 +46,10 @@ function HomePage() {
             creating and problem-solving. I spent a year in a computer science
             course and hold a Bachelor of Arts in Music. My diverse background
             fuels my creativity and approach to coding. Over the years, I've
-            honed my skills in various technologies including Figma, React,
-            Kaboom, Java, Python, and C. Whether I'm designing user interfaces,
-            building dynamic web applications, or developing interactive games,
-            I enjoy turning my crazy ideas into reality.
+            honed my skills in various tools and technologies including
+            React,Figma, Javascript, Java, Python, and C. Whether I'm designing
+            user interfaces, building dynamic web applications, or developing
+            interactive games, I enjoy turning my crazy ideas into reality.
           </p>
           <div className="flex gap-4 mt-10">
             {" "}
@@ -69,6 +70,9 @@ function HomePage() {
             </div>
             <div className="flex items-center justify-center w-12 h-12 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
               <FaFigma className="text-2xl text-purple-500" />
+            </div>
+            <div className="flex items-center justify-center w-12 h-12 bg-purple-300 rounded-full shadow-lg hover:bg-violet-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
+              <TbBrandJavascript className="text-2xl text-blue-950" />
             </div>
           </div>
         </div>
