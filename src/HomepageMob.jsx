@@ -46,8 +46,8 @@ function HomePage() {
             creating and problem-solving. I spent a year in a computer science
             course and hold a Bachelor of Arts in Music. My diverse background
             fuels my creativity and approach to coding. Over the years, I've
-            honed my skills in various tools and technologies including
-            React,Figma, Javascript, Java, Python, and C. Whether I'm designing
+            honed my skills in various tools and technologies including React,
+            ThreeJS, Figma, Javascript, Java and Python. Whether I'm designing
             user interfaces, building dynamic web applications, or developing
             interactive games, I enjoy turning my crazy ideas into reality.
           </p>
