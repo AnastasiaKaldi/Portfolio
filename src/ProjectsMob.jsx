@@ -27,7 +27,6 @@ function About() {
 
   return (
     <section className="ProjectsMob">
-      {/* Wrap the title in a div */}
       <div className="title-container">
         <h1
           className="MyProjects text-white text-4xl"
