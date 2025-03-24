@@ -6,6 +6,8 @@ import Cosmos from "../src/assets/Cosmos.png";
 import Musa from "../src/assets/Musa.png";
 import Under from "../src/assets/underConstruction.jpg";
 import Icon from "../src/assets/code.png";
+import iqra from "../src/assets/Iqra.png";
+import cricos from "../src/assets/Cricos.png";
 
 function About() {
   const responsive = {
@@ -39,6 +41,39 @@ function About() {
         <div className="Carousel">
           <Carousel responsive={responsive}>
             <div className="card rounded-lg">
+              <img className="webImage rounded-lg" src={iqra} alt="Iqra" />
+              <h3 className="text-white bold font-bold">Iqra International</h3>
+              <p className="price">
+                I created the Website for Iqra International, an
+                Australian-based company providing tailored business solutions.
+                The website was created using React JS, CSS and Tailwind and is
+                also responsive on mobile.
+              </p>
+              <div style={{ display: "flex", gap: "1px" }}>
+                <button className="button-with-icon rounded-lg">
+                  <a
+                    href="https://github.com/AnastasiaKaldi"
+                    className="button-link"
+                  >
+                    <img
+                      src={Icon}
+                      alt="icon"
+                      style={{ width: "30px", height: "30px" }}
+                    />
+                  </a>
+                </button>
+                <button className="rounded-lg">
+                  <a
+                    href="https://iqrainternational.com.au/"
+                    className="button-link"
+                  >
+                    Take a Visit
+                  </a>
+                </button>
+              </div>
+            </div>
+
+            <div className="card rounded-lg">
               <img className="webImage rounded-lg" src={Cosmos} alt="Cosmos" />
               <h3 className="text-white bold font-bold">Cosmos</h3>
               <p className="price">
@@ -65,7 +100,6 @@ function About() {
                   </a>
                 </button>
                 <button className="rounded-lg">
-                  {" "}
                   <a
                     href="https://ourcosmos.netlify.app/"
                     className="button-link"
@@ -75,6 +109,7 @@ function About() {
                 </button>
               </div>
             </div>
+
             <div className="card rounded-lg">
               <img className="webImage rounded-lg" src={Musa} alt="Musa" />
               <h3 className="text-white font-bold">Project Musa</h3>
@@ -102,9 +137,7 @@ function About() {
                     />
                   </a>
                 </button>
-
                 <button className="rounded-lg">
-                  {" "}
                   <a
                     href="https://projectmusa.netlify.app/"
                     className="button-link"
@@ -114,28 +147,38 @@ function About() {
                 </button>
               </div>
             </div>
+
             <div className="card rounded-lg">
-              <img
-                className="webImage rounded-lg"
-                src={Under}
-                alt="Under Construction"
-              />
-              <h3 className="text-white font-bold">Restaurant Blog</h3>
+              <img className="webImage rounded-lg" src={cricos} alt="Cricos" />
+              <h3 className="text-white bold font-bold">Cricos Marketing</h3>
               <p className="price">
-                A blog website that showcases and rates different restaurants in
-                Leeds and their cuisines.
+                I developed the website for Cricos Marketing, an
+                Australian-based company that specializes in brand marketing.
+                The website was created using React JS, CSS and Tailwind and is
+                also responsive on mobile.
               </p>
-            </div>
-            <div className="card rounded-lg">
-              <img
-                className="webImage rounded-lg"
-                src={Under}
-                alt="Under Construction"
-              />
-              <h3 className="text-white font-bold">Something</h3>
-              <p className="price">
-                An educational website showcasing information.
-              </p>
+              <div style={{ display: "flex", gap: "1px" }}>
+                <button className="button-with-icon rounded-lg">
+                  <a
+                    href="https://github.com/AnastasiaKaldi"
+                    className="button-link"
+                  >
+                    <img
+                      src={Icon}
+                      alt="icon"
+                      style={{ width: "30px", height: "30px" }}
+                    />
+                  </a>
+                </button>
+                <button className="rounded-lg">
+                  <a
+                    href="https://cricosmarketing.com/"
+                    className="button-link"
+                  >
+                    Take a Visit
+                  </a>
+                </button>
+              </div>
             </div>
           </Carousel>
         </div>

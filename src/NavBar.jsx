@@ -35,22 +35,18 @@ function NavBar() {
             AK
           </span>
         </a>
-        <div className="HomeComponent text-m relative container mx-auto py-4 mr-80 space-x-8">
-          <FlyoutLink href="/" FlyoutContent={<HomeContent />}>
-            <span style={{ fontFamily: "Playfair Display" }}>Home</span>
-          </FlyoutLink>
-        </div>
-        <div className="ProjectsComponent text-m relative container mx-auto py-4 ml-80 flex space-x-8">
+
+        <div className="ProjectsComponent text-m relative container mx-auto ml-80 flex space-x-8">
           <FlyoutLink href="/projects" FlyoutContent={<ProjectsContent />}>
             <span style={{ fontFamily: "Playfair Display" }}>Projects</span>
           </FlyoutLink>
         </div>
-        <div className="ReachComponent text-m relative container mx-auto py-4 ml-80 flex space-x-8">
+        <div className="ReachComponent text-m relative container mx-auto ml-80 flex space-x-8">
           <FlyoutLink href="/contact" FlyoutContent={<ReachContent />}>
             <span style={{ fontFamily: "Playfair Display" }}>Get in touch</span>
           </FlyoutLink>
         </div>
-        <div className="SoundComponent relative container mx-auto py-4 ml-80 flex space-x-8">
+        <div className="SoundComponent relative container mx-auto  ml-80 flex space-x-8">
           <button onClick={togglePlayPause}>
             {isPlaying ? (
               <img

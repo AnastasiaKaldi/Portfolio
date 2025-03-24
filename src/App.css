@@ -55,28 +55,22 @@ body, html {
   background-color: #a47ce149;
 }
 
-.HomeComponent {
-  position: absolute;
-  right: -1000px;
-  top: 40px;
-}
 
 .ProjectsComponent {
-  position: absolute;
   left: 950px;
-  bottom: 14px;
+  top: 40px;
 }
 
 .ReachComponent {
   position: absolute;
   left: 1200px;
-  bottom: 69px;
+  top: 18px;
 }
 
 .SoundComponent {
   position: absolute;
-  left: 1400px;
-  bottom: 128px;
+  left: 1500px;
+  top: -7px;
 }
 
 .Background {
@@ -379,7 +373,7 @@ body, html {
 }
 
 .title-container {
-  margin-bottom: -170px; /* Adjust this value to move the title closer to the carousel */
+  margin-bottom: -170px; 
 }
 
 
