@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
-import sound from "./assets/hoax.mp3";
+import sound from "./assets/ThePowerBG3.mp3";
 
 function NavBar() {
   const [isPlaying, setIsPlaying] = useState(false);
