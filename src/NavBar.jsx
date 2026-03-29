@@ -1,14 +1,20 @@
-/* eslint-disable no-unused-vars */
-import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import Icon from "../src/assets/soundOn.png";
-import Icon2 from "../src/assets/soundOff.png";
-import sound from "../src/assets/hoax.mp3";
+import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
+import { HiMenuAlt4, HiX } from "react-icons/hi";
+import sound from "./assets/hoax.mp3";
 
 function NavBar() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [audio] = useState(new Audio(sound));
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const togglePlayPause = () => {
     if (isPlaying) {
@@ -21,128 +27,91 @@ function NavBar() {
     setIsPlaying(!isPlaying);
   };
 
-  return (
-    <div className="NavBar">
-      <div className="fixed top-0 left-0 w-full z-50">
-        <a
-          href="/"
-          className="flex items-center space-x-3 rtl:space-x-reverse shadow-md"
-        >
-          <span
-            className="self-center text-4xl font-semibold whitespace-nowrap ml-16 text-purple-800 -mb-28"
-            style={{ fontFamily: "Playfair Display" }}
-          >
-            AK
-          </span>
-        </a>
+  const scrollTo = (id) => {
+    setMobileOpen(false);
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
 
-        <div className="ProjectsComponent text-m relative container mx-auto ml-80 flex space-x-8">
-          <FlyoutLink href="/projects" FlyoutContent={<ProjectsContent />}>
-            <span style={{ fontFamily: "Playfair Display" }}>Projects</span>
-          </FlyoutLink>
+  return (
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 backdrop-blur-xl ${
+        scrolled
+          ? "bg-midnight/60 border-b border-cream/5"
+          : "bg-midnight/30"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-3 md:px-12 h-14 md:h-20 flex items-center justify-between">
+        {/* Logo */}
+        <button
+          onClick={() => scrollTo("hero")}
+          className="font-display text-2xl font-semibold text-cream tracking-wide"
+        >
+          AK
+        </button>
+
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center gap-10">
+          <button onClick={() => scrollTo("about")} className="nav-link">
+            About
+          </button>
+          <button onClick={() => scrollTo("projects")} className="nav-link">
+            Projects
+          </button>
+          <button onClick={() => scrollTo("contact")} className="nav-link">
+            Contact
+          </button>
+          <button
+            onClick={togglePlayPause}
+            className="ml-4 text-cream/40 hover:text-cream transition-colors duration-300"
+          >
+            {isPlaying ? <FaVolumeUp size={16} /> : <FaVolumeMute size={16} />}
+          </button>
         </div>
-        <div className="ReachComponent text-m relative container mx-auto ml-80 flex space-x-8">
-          <FlyoutLink href="/contact" FlyoutContent={<ReachContent />}>
-            <span style={{ fontFamily: "Playfair Display" }}>Get in touch</span>
-          </FlyoutLink>
-        </div>
-        <div className="SoundComponent relative container mx-auto  ml-80 flex space-x-8">
-          <button onClick={togglePlayPause}>
-            {isPlaying ? (
-              <img
-                src={Icon2}
-                alt="icon"
-                style={{ width: "30px", height: "30px" }}
-              />
-            ) : (
-              <img
-                src={Icon}
-                alt="icon"
-                style={{ width: "30px", height: "30px" }}
-              />
-            )}
+
+        {/* Mobile controls */}
+        <div className="flex md:hidden items-center gap-4">
+          <button
+            onClick={togglePlayPause}
+            className="text-cream/40 hover:text-cream transition-colors"
+          >
+            {isPlaying ? <FaVolumeUp size={16} /> : <FaVolumeMute size={16} />}
+          </button>
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="text-cream/60 hover:text-cream transition-colors"
+          >
+            {mobileOpen ? <HiX size={24} /> : <HiMenuAlt4 size={24} />}
           </button>
         </div>
       </div>
-    </div>
-  );
-}
 
-const FlyoutLink = ({ children, href, FlyoutContent }) => {
-  const [open, setOpen] = useState(false);
-  const showFlyout = open && FlyoutContent;
-
-  return (
-    <div
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-      className="relative inline-block"
-    >
-      <a
-        href={href}
-        className="relative h-fit w-fit text-white hover:text-purple-800"
-        style={{ fontFamily: "Times New Roman" }}
-      >
-        {children}
-        <span
-          style={{
-            transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
-          }}
-          className="absolute bottom-0 left-0 right-0 mt-10 h-1 origin-left rounded-full bg-purple-300 transition-transform duration-300 ease-out"
-        />
-      </a>
+      {/* Mobile Menu */}
       <AnimatePresence>
-        {showFlyout && (
+        {mobileOpen && (
           <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 15 }}
-            style={{ translateX: "-50%" }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            className="absolute left-1/2 top-12 bg-white text-black rounded-xl shadow-lg"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="mobile-menu md:hidden overflow-hidden"
           >
-            <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
-            {FlyoutContent}
+            <div className="px-6 py-8 flex flex-col gap-6">
+              {["about", "projects", "contact"].map((section) => (
+                <button
+                  key={section}
+                  onClick={() => scrollTo(section)}
+                  className="text-left text-cream/60 hover:text-cream text-sm uppercase tracking-widest transition-colors"
+                >
+                  {section}
+                </button>
+              ))}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </nav>
   );
-};
-
-const ProjectsContent = () => {
-  return (
-    <div className="w-64 bg-purple-200 rounded-xl p-6">
-      <div className="mb-3 space-y-3">
-        <a
-          href="https://ourcosmos.netlify.app/"
-          className="block text-m text-purple-400 hover:underline"
-        >
-          <span style={{ fontFamily: "Playfair Display" }}>Cosmos</span>
-        </a>
-        <a
-          href="https://projectmusa.netlify.app/"
-          className="block text-m text-purple-400 hover:underline"
-        >
-          <span style={{ fontFamily: "Playfair Display" }}>Project Musa</span>
-        </a>
-      </div>
-    </div>
-  );
-};
-
-const HomeContent = () => {};
-
-const ReachContent = () => {};
-
-FlyoutLink.propTypes = {
-  children: PropTypes.node.isRequired,
-  href: PropTypes.string.isRequired,
-  FlyoutContent: PropTypes.node,
-};
-
-FlyoutLink.defaultProps = {
-  FlyoutContent: null,
-};
+}
 
 export default NavBar;

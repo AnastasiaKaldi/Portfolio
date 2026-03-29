@@ -2,9 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-section {
-  display: grid;
-  place-items: center;
-  align-content: center;
-  min-height: 100vh;
+@layer base {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    background-color: #1D0515;
+    color: #E6CDB5;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #9A0D1B;
+    color: #E6CDB5;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1D0515;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #550816;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6A040F;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply font-display text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight;
+  }
+
+  .section-subheading {
+    @apply font-display text-2xl md:text-3xl italic text-cream/60;
+  }
+
+  .glass-card {
+    background: linear-gradient(135deg, rgba(53, 6, 22, 0.6), rgba(29, 5, 21, 0.8));
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(230, 205, 181, 0.08);
+  }
+
+  .accent-line {
+    @apply h-px bg-gradient-to-r from-transparent via-scarlet to-transparent;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-500;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 40px rgba(154, 13, 27, 0.15);
+  }
 }
